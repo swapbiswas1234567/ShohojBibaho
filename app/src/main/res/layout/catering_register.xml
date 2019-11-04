@@ -1,188 +1,202 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bkbiswas.shohojbibaho.CateringRegister"
-    android:background="#ececec">
-
+    android:background="#ececec"
+    tools:context="com.example.bkbiswas.shohojbibaho.Registration3">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="25dp"
-        android:orientation="vertical"
-        android:weightSum="14">
+        android:background="#ececec">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:orientation="horizontal"
-            android:weightSum="2">
+            android:layout_height="match_parent"
+            android:layout_margin="25dp"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:text="Shohoj"
+                    android:textColor="#de1616"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="Bibaho"
+                    android:textColor="#534f4f"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgCat"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/catering3"/>
+
+            <Button
+                android:id="@+id/chooseCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/round_button2"
+                android:text="UPLOAD  FOOD'S  PHOTO"
+                android:textColor="#434e43"
+                android:textStyle="bold"
+                android:fontFamily="serif"/>
+
+
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:gravity="end"
-                android:text="Shohoj"
-                android:textColor="#de1616"
-                android:textSize="30sp"
-                android:textStyle="bold" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="5dp"
+                android:text="Catering Information"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:gravity="center"/>
+
+
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:text="Bibaho"
-                android:textColor="#534f4f"
-                android:textSize="30sp"
-                android:textStyle="bold" />
 
-        </LinearLayout>
-
-
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:text="Name Of Cattering Service"
-            android:textSize="15sp" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/edittext_white" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="25dp"
-            android:layout_weight="1"
-            android:text="Area Of Service"
-            android:textSize="15sp" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/edittext_white" />
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="25dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="3">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:text="Food Item"
-                android:textSize="15sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:text="Price"
-                android:textSize="15sp" />
-
-        </LinearLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="3">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Catering Service Name"
+                android:fontFamily="serif"
+                android:layout_marginBottom="5dp"/>
 
             <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
+                android:id="@+id/cateringCat"
+                android:fontFamily="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@drawable/edittext_white" />
 
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:text="Area Of Service"
+                android:fontFamily="serif" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff">
+
+                <Spinner
+                    android:id="@+id/areaCat"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:entries="@array/district" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="Charge Per Waiter"
+                android:fontFamily="serif" />
+
             <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
+                android:id="@+id/chargeCat"
+                android:fontFamily="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_white"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="5dp"
+                android:text="ADD FOOD ITEM"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:fontFamily="serif" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="Item Name"
+                android:fontFamily="serif" />
+
+            <EditText
+                android:id="@+id/itemCat"
+                android:fontFamily="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_white" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="5dp"
+                android:text="Price"
+                android:fontFamily="serif" />
+
+            <EditText
+                android:id="@+id/priceCat"
+                android:fontFamily="serif"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@drawable/edittext_white"
                 android:inputType="number" />
 
             <Button
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/rounded_button3"
-                android:text="ADD"
-                android:textColor="#fff"/>
+                android:id="@+id/registerCat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/round_button"
+                android:text="Register FOR CATERING"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:alpha=".9"
+                android:fontFamily="serif"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"></LinearLayout>
+
 
         </LinearLayout>
 
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="25dp"
-            android:layout_weight="1"
-            android:text="Number Of Waiters"
-            android:textSize="15sp" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/edittext_white" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="25dp"
-            android:layout_weight="1"
-            android:text="Phone No"
-            android:textSize="15sp" />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/edittext_white" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="30dp"
-            android:layout_weight="2"
-            android:background="@drawable/rounded_button3"
-            android:text="Register FOR CATTERING"
-            android:textColor="#fff"
-            android:textStyle="bold" />
-
-
-
-
     </LinearLayout>
-
-
-</LinearLayout>
+</ScrollView>

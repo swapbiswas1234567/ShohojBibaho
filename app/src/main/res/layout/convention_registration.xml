@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bkbiswas.shohojbibaho.ConventionRegistration"
+    android:background="#ececec"
+    tools:context="com.example.bkbiswas.shohojbibaho.Registration3">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     android:background="#ececec">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_margin="25dp"
-        android:orientation="vertical"
-        android:weightSum="16">
+        android:orientation="vertical">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="2">
 
@@ -48,57 +51,99 @@
         </LinearLayout>
 
 
+        <ImageView
+            android:id="@+id/imgC"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/conventionlatest"/>
+
+        <Button
+            android:id="@+id/chooseC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/round_button2"
+            android:text="Upload  Convention's Photo"
+            android:textColor="#392424"
+            android:textStyle="bold"
+            android:fontFamily="serif"/>
+
+
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="5dp"
+            android:text="Convention Information"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:text="Convention Centre Name"
-            android:textSize="15sp" />
+            android:fontFamily="serif"
+            android:layout_marginBottom="5dp"/>
 
         <EditText
+            android:id="@+id/convnameC"
+            android:fontFamily="serif"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:background="@drawable/edittext_white" />
 
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:layout_marginTop="15dp"
-            android:layout_weight="1"
             android:text="Location"
-            android:textSize="15sp" />
+            android:fontFamily="serif" />
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/edittext_white" />
+            android:layout_height="wrap_content"
+            android:background="#fff">
 
+            <Spinner
+                android:id="@+id/locationC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:entries="@array/district" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_weight="1"
-            android:text="Floor Size (in Square Feet)"
-            android:textSize="15sp" />
+            android:layout_marginBottom="5dp"
+            android:text="Area size (in Square Feet)"
+            android:fontFamily="serif" />
 
         <EditText
+            android:id="@+id/areaC"
+            android:fontFamily="serif"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:background="@drawable/edittext_white"
             android:inputType="number" />
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
             android:orientation="horizontal"
             android:weightSum="2">
 
@@ -108,7 +153,7 @@
                 android:layout_marginRight="5dp"
                 android:layout_weight="1"
                 android:text="Capacity Of People"
-                android:textSize="15sp" />
+                android:fontFamily="serif" />
 
             <TextView
                 android:layout_width="0dp"
@@ -116,19 +161,20 @@
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
                 android:text="Capacity Of Parking"
-                android:textSize="15sp" />
+                android:fontFamily="serif"/>
 
         </LinearLayout>
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="2">
 
             <EditText
+                android:id="@+id/capacitypeopleC"
+                android:fontFamily="serif"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginRight="5dp"
@@ -137,6 +183,8 @@
                 android:inputType="number" />
 
             <EditText
+                android:id="@+id/capacityparkingC"
+                android:fontFamily="serif"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="5dp"
@@ -145,88 +193,57 @@
                 android:inputType="number" />
 
         </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="15dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:text="Decoration Charge"
-                android:textSize="15sp" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:text="Phone No"
-                android:textSize="15sp" />
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/edittext_white"
-                android:inputType="number" />
-
-            <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:background="@drawable/edittext_white"
-                android:inputType="number" />
-
-        </LinearLayout>
-
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
-            android:layout_weight="1"
-            android:text="Floor Cost Per Event"
-            android:textSize="15sp" />
+            android:layout_marginBottom="5dp"
+            android:text="Decoration Charge Per Person"
+            android:fontFamily="serif" />
 
         <EditText
+            android:id="@+id/decorationC"
+            android:fontFamily="serif"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:background="@drawable/edittext_white"
             android:inputType="number" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="5dp"
+            android:text="Floor Cost Per Event"
+            android:fontFamily="serif" />
+
+        <EditText
+            android:id="@+id/costC"
+            android:fontFamily="serif"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_white"
+            android:inputType="number" />
 
         <Button
+            android:id="@+id/registerC"
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="25dp"
-            android:layout_weight="2"
-            android:background="@drawable/rounded_button3"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="@drawable/round_button"
             android:text="Register FOR CONVENTION"
             android:textColor="#fff"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:fontFamily="serif"
+            android:alpha=".9"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"></LinearLayout>
 
 
     </LinearLayout>
 
 </LinearLayout>
+</ScrollView>

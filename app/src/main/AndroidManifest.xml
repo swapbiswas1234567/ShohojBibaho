@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.bkbiswas.shohojbibaho">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -32,7 +34,23 @@
         <activity android:name=".CateringRegister" />
         <activity android:name=".CarFind" />
         <activity android:name=".ConventionFind" />
-        <activity android:name=".CateringFind"></activity>
+        <activity android:name=".CateringFind" />
+        <activity android:name=".Successfull" />
+        <activity android:name=".Profile" />
+        <activity android:name=".Registration3" />
+        <activity android:name=".CarFind2" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".CateringFind2" />
+        <activity android:name=".ConventionFind2" />
+
+        <service android:name=".FcmService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".PartnerFind2" />
+        <activity android:name=".ForgotPassword"></activity>
     </application>
 
 </manifest>

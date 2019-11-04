@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#faf8f8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/strokegreen">
+
+        <ImageView
+            android:id="@+id/sampleipartner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"
+            android:src="@drawable/usericon"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/samplet1partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet2partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date of birth: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet3partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Height: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet4partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weight: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet5partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Religion: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet6partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Works at: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+
+
+    <TextView
+        android:id="@+id/samplet7partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Country: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:id="@+id/sampleb1partner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+        android:text="SEND REQUEST"
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

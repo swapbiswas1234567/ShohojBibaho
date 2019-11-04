@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#faf8f8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/strokegreen">
+
+    <ImageView
+        android:id="@+id/sampleiCon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_margin="10dp"
+        android:src="@drawable/convention4"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/samplet1con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convention Name: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet2con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile No: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet3con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet4con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Area: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet5con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="People Capacity: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet6con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Decoration Charge Per Person: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+
+
+    <TextView
+        android:id="@+id/samplet7con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Floor Cost: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+
+    <Button
+        android:id="@+id/sampleb1con"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/round_button"
+        android:text="SEND REQUEST"
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

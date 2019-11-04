@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bkbiswas.shohojbibaho.Profile"
+    android:orientation="vertical"
+    android:weightSum="18"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="@drawable/stroke"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <ImageView
+            android:id="@+id/pipp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/usericon"
+            android:scaleType="fitXY"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="10"
+    android:weightSum="13"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Name"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Swapnil Biswas"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="User Name"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Swapnil Biswas"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Email ID"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/emailid"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="swap@gmail.com"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Birthday"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="26 August 1995"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Religion"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/rel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Swapnil Biswas"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Country"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"/>
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Swapnil Biswas"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Weight"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <TextView
+            android:id="@+id/weightp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Swapnil Biswas"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Blood Group"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <TextView
+            android:id="@+id/bloodp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Swapnil Biswas"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Height"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <TextView
+            android:id="@+id/heightp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Swapnil Biswas"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Contact No"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <TextView
+            android:id="@+id/contactnop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Swapnil Biswas"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Works At"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <TextView
+            android:id="@+id/worksatp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Swapnil Biswas"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Designation"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <TextView
+            android:id="@+id/designationp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Swapnil Biswas"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Gender"
+            android:gravity="left"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:layout_marginLeft="25dp"
+            />
+
+        <TextView
+            android:id="@+id/gen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="Swapnil Biswas"
+            android:fontFamily="serif"
+            android:textSize="15sp"
+            android:gravity="right"
+            android:layout_marginRight="25dp"
+            android:textColor="#1f5b80"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+</LinearLayout>

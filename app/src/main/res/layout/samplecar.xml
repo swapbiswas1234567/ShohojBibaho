@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#faf8f8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/strokegreen">
+
+    <ImageView
+        android:id="@+id/sampleiCar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_margin="5dp"
+        android:src="@drawable/car3" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/samplet1car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Owner: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet2car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mobile No: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet3car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/samplet4car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No Of Seats: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/samplet5car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Per Hour Cost: "
+        android:fontFamily="serif"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="7dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/sampleb1car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/round_button"
+        android:text="SEND REQUEST"
+        android:textColor="#ffffff"
+        android:fontFamily="serif"
+        android:textStyle="bold" />
+
+</LinearLayout>

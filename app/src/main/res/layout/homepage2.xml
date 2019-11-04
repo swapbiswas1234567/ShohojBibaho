@@ -19,21 +19,47 @@
 
         <LinearLayout
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="4"
-            android:background="@drawable/stroke">
+            android:orientation="vertical"
+            android:weightSum="20">
 
-            <ImageView
-                android:layout_margin="5dp"
-                android:scaleType="fitXY"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:src="@drawable/demo2"
-                android:clickable="true"/>
+            <LinearLayout
+                android:id="@+id/lpp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="18"
+                android:background="@drawable/stroke"
+                android:orientation="vertical"
+                android:clickable="true">
+
+                <ImageView
+                    android:id="@+id/ipp2"
+                    android:layout_margin="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="17"
+                    android:src="@drawable/usericon"
+                    android:scaleType="fitXY"
+                    android:clickable="true"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tchangepp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:text="Change Profile Photo"
+                android:fontFamily="serif"
+                android:textColor="#1d5678"
+                android:textAlignment="center"
+                android:clickable="true"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                />
 
         </LinearLayout>
-
 
 
 
@@ -48,25 +74,25 @@
             android:weightSum="4">
 
             <TextView
+                android:id="@+id/tname2"
                 android:textStyle="bold"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:paddingTop="10dp"
-                android:text="Swapnil Biswas"
+                android:paddingTop="5dp"
                 android:textSize="18dp"
                 android:textColor="#27427b"
                 android:alpha=".9"
                 android:clickable="true"/>
 
             <TextView
+                android:id="@+id/tworksat2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
                 android:fontFamily="serif"
-                android:paddingTop="7dp"
-                android:text="Works at: MIST"
+                android:paddingTop="4dp"
                 android:textSize="15dp"
                 android:textColor="#61121b"
                 android:alpha=".9"/>
@@ -79,25 +105,32 @@
                 android:weightSum="5">
 
                 <ImageView
+                    android:id="@+id/ieditprofile2"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:scaleType="fitXY"
                     android:src="@drawable/edit_profile_logo"
-                    android:padding="6dp"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingTop="3dp"
+                    android:clickable="true"
                     />
 
                 <TextView
+                    android:id="@+id/teditprofile2"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:fontFamily="serif"
                     android:paddingLeft="10dp"
-                    android:paddingTop="7dp"
+                    android:paddingTop="3dp"
                     android:text="Edit Profile"
                     android:textSize="15sp"
                     android:textColor="#111929"
-                    android:alpha=".9"/>
+                    android:alpha=".9"
+                    android:clickable="true"/>
 
             </LinearLayout>
 
@@ -112,8 +145,11 @@
                 android:weightSum="5">
 
                 <ImageView
-                    android:id="@+id/ilogout"
-                    android:padding="8dp"
+                    android:id="@+id/ilogout2"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingBottom="8dp"
+                    android:paddingTop="6dp"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
@@ -123,13 +159,13 @@
                     android:clickable="true"/>
 
                 <TextView
-                    android:id="@+id/tlogout"
+                    android:id="@+id/tlogout2"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="4"
                     android:fontFamily="serif"
                     android:paddingLeft="10dp"
-                    android:paddingTop="7dp"
+                    android:paddingTop="3dp"
                     android:text="Log Out"
                     android:textSize="15sp"
                     android:textColor="#111929"
@@ -174,6 +210,7 @@
         >
 
         <Button
+            android:id="@+id/partner"
             android:layout_marginLeft="5dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -183,7 +220,7 @@
             />
 
         <Button
-            android:id="@+id/car"
+            android:id="@+id/car2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -193,7 +230,7 @@
             />
 
         <Button
-            android:id="@+id/convention"
+            android:id="@+id/convention2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -203,7 +240,7 @@
             />
 
         <Button
-            android:id="@+id/catering"
+            android:id="@+id/catering2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -306,7 +343,7 @@
         android:weightSum="8">
 
         <ImageView
-            android:id="@+id/iprovidecar"
+            android:id="@+id/iprovidecar2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -314,7 +351,7 @@
             android:clickable="true"/>
 
         <TextView
-            android:id="@+id/tprovidecar"
+            android:id="@+id/tprovidecar2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="3"
@@ -337,7 +374,7 @@
         android:layout_marginTop="5dp">
 
         <ImageView
-            android:id="@+id/iprovideconvention"
+            android:id="@+id/iprovideconvention2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -345,7 +382,7 @@
             android:clickable="true"/>
 
         <TextView
-            android:id="@+id/tprovideconvention"
+            android:id="@+id/tprovideconvention2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="4"
@@ -368,7 +405,7 @@
         android:layout_marginTop="5dp">
 
         <ImageView
-            android:id="@+id/iprovidecatering"
+            android:id="@+id/iprovidecatering2"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
@@ -376,7 +413,7 @@
             android:clickable="true"/>
 
         <TextView
-            android:id="@+id/tprovidecatering"
+            android:id="@+id/tprovidecatering2"
             android:padding="10dp"
             android:layout_width="0dp"
             android:layout_height="match_parent"

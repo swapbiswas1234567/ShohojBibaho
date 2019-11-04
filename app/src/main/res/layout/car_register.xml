@@ -1,193 +1,250 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.bkbiswas.shohojbibaho.CarRegister"
-    android:background="#ececec">
-
+    android:background="#ececec"
+    tools:context="com.example.bkbiswas.shohojbibaho.Registration3">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:weightSum="16"
-        android:layout_margin="25dp">
+        android:background="#ececec">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:weightSum="2"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="25dp">
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginRight="5dp"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:gravity="end"
-                android:text="Shohoj"
-                android:textSize="30sp"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:gravity="end"
+                    android:text="Shohoj"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="#de1616"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:fontFamily="monospace"
+                    android:text="Bibaho"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:textColor="#534f4f"/>
+
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/imgCar"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="15dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/car3"/>
+
+            <Button
+                android:id="@+id/chooseCar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@drawable/round_button2"
+                android:text="Upload Your Car's Photo"
+                android:textColor="#301c1c"
                 android:textStyle="bold"
-                android:textColor="#de1616"/>
+                android:fontFamily="serif" />
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="5dp"
-                android:layout_weight="1"
-                android:fontFamily="monospace"
-                android:text="Bibaho"
-                android:textSize="30sp"
+                android:layout_marginTop="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Car Information"
+                android:singleLine="true"
+                android:fontFamily="serif"
+                android:gravity="center"
                 android:textStyle="bold"
-                android:textColor="#534f4f"/>
+                />
 
-        </LinearLayout>
-
-
-
-        <TextView
-            android:layout_marginTop="20dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="15sp"
-            android:text="Car Registration No"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/edittext_white"/>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:layout_marginTop="15dp"
-            android:weightSum="2"
-            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="Car Type"
-                android:layout_marginRight="5dp"
-                android:textSize="15sp"/>
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:text="No of Seats"
-                android:layout_marginLeft="5dp"
-                android:textSize="15sp"/>
-
-        </LinearLayout>
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:weightSum="2"
-            android:orientation="horizontal">
-
-            <Spinner
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginRight="5dp"
-                android:background="#fff"/>
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:text="Car Registration No"
+                android:singleLine="true"
+                android:fontFamily="serif"/>
 
             <EditText
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:layout_marginLeft="5dp"
+                android:id="@+id/cr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:background="@drawable/edittext_white"
-                android:inputType="number"/>
+                android:singleLine="true"
+                android:fontFamily="serif" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="15dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Car Type"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="serif"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="No of Seats"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="5dp"
+                    android:background="#fff">
+                    <Spinner
+                        android:id="@+id/ct"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:entries="@array/car" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/n"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/edittext_white"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:fontFamily="serif"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="serif"
+                android:text="Driver's Name"
+                />
+
+            <EditText
+                android:id="@+id/dn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_white"
+                android:singleLine="true"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="serif"
+                android:text="Driver's License No"/>
+
+            <EditText
+                android:id="@+id/dl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_white"
+                android:singleLine="true"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="serif"
+                android:text="Driver's Phone No"/>
+
+            <EditText
+                android:id="@+id/dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_white"
+                android:inputType="number"
+                android:singleLine="true"
+                android:fontFamily="serif"/>
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="serif"
+                android:text="Expected Amount Per Hour"/>
+
+            <EditText
+                android:id="@+id/ea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_white"
+                android:inputType="number"
+                android:singleLine="true"
+                android:entries="@array/car"
+                android:fontFamily="serif"/>
+
+
+            <Button
+                android:id="@+id/rc"
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round_button"
+                android:text="REGISTER FOR CAR"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:inputType="number"
+                android:fontFamily="serif"
+                android:alpha=".9"/>
 
         </LinearLayout>
 
-
-        <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="15sp"
-            android:text="Driver's Name"
-            />
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/edittext_white"/>
-
-        <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="15sp"
-            android:text="Driver's License No"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/edittext_white"/>
-
-        <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="15sp"
-            android:text="Driver's Phone No"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/edittext_white"/>
-
-        <TextView
-            android:layout_marginTop="15dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:textSize="15sp"
-            android:text="Expected Amount Per Hour"/>
-
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@drawable/edittext_white"/>
-
-
-        <Button
-            android:layout_marginTop="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="2"
-            android:background="@drawable/rounded_button3"
-            android:text="REGISTER FOR CAR"
-            android:textColor="#fff"
-            android:textStyle="bold"
-            android:inputType="number"
-            android:textSize="15sp"/>
-
-
-
-
     </LinearLayout>
-
-</LinearLayout>
+</ScrollView>
